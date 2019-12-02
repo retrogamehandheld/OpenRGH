@@ -29,7 +29,7 @@ if [ -z "$1" ] || [ "x$1" = "xstart" ]; then
         echo -n 1 >/sys/devices/virtual/vtconsole/vtcon1/bind
         clear
         echo
-        echo "Make SWAP file for fist time, please wait..."
+        echo "Make SWAP file for first time, please wait..."
         echo
         dd if=/dev/zero bs=1024 | pv -s 498M | dd of=$SWAP_SD_FILE bs=1024 count=$size conv=notrunc,noerror 
         echo "done"
