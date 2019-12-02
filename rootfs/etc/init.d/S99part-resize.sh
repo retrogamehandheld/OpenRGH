@@ -17,16 +17,6 @@ if [[ ! -d /media/data || -f /media/data/.partition_resized ]]; then
     else
     failexit
     fi
-    (echo d
-    echo 2
-    echo n
-    echo
-    echo
-    echo
-    echo
-    echo w
-    ) | fdisk /dev/mmcblk0
-    /usr/sbin/partx -u /dev/mmcblk0
     /bin/umount -l /dev/mmcblk0p2 1>/dev/null 2>&1
     /usr/sbin/e2fsck -f -y -C 0 /dev/mmcblk0p2
     /bin/mount -t ext4 -o noatime,nodiratime,rw /dev/mmcblk0p2 /media/data
@@ -62,6 +52,7 @@ echo w
 /usr/sbin/partx -u /dev/mmcblk0
 /bin/umount -l /dev/mmcblk0p2 1>/dev/null 2>&1
 /usr/sbin/e2fsck -f -y -C 0 /dev/mmcblk0p2
+/usr/sbin/e2fsck -f /dev/mmcblk0p2
 /usr/sbin/resize2fs -p /dev/mmcblk0p2 || failexit
 /bin/mount -t ext4 -o noatime,nodiratime,rw /dev/mmcblk0p2 /media/data
 touch /media/data/.partition_resized
