@@ -1,4 +1,4 @@
-# RetroXFW
+# OpenRGH
 Upcoming OpenDingux Fork
 
 Goals:
