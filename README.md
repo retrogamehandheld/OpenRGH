@@ -13,14 +13,16 @@
 https://drive.google.com/file/d/1brhBrdfTbwJAbGnNt5gLairofZK-gdEz/view
 
 ## Changelog:<br>
-### Beta5:<br>
+### Beta1:<br>
 1. exfAT support added - no more need to download a utility to format 64GB+ SD cards
 2. Default SD card mount changed to /media/sdcard - No having to re-do paths when swapping SD cards
 3. Auto swap file and partition resize - This takes a while, allow it to finish.  Progress will be shown on screen during first boot
-4. Duplicate modules removed from modules.squashfs 
-5. Fix the resize in old stock firmwares (bad ext4 partition)
-6. Fixed power off and reboot error messages
-7. Fixed lazy init of ext4 causing slowdowns and stuttering
+4. Slowdown reports - this appears to be due to background processes running in the first 15 minutes after completing the update. Please allow this time before reporting slowdowns. 
+5. Duplicate modules removed from modules.squashfs 
+
+### Beta2:<br>
+1. Fix the resize in old stock firmwares (bad ext4 partition)
+2. Fixed power off and reboot error messages
 
 ## Instructions:<br>
 1. Place in /media/data/apps or /media/<your SD card>/apps
