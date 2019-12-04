@@ -19,7 +19,7 @@
 4. Duplicate modules removed from modules.squashfs 
 5. Fix the resize in old stock firmwares (bad ext4 partition)
 6. Fixed power off and reboot error messages
-7. Fixed lazy init of ext4 causing slowdowns and stuttering
+7. Fixed slowdowns and stuttering during first 15 minutes after first boot
 
 ## Instructions:<br>
 1. Place in /media/data/apps or /media/<your SD card>/apps
