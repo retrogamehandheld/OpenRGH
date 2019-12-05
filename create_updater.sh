@@ -2,6 +2,8 @@
 set -e
 umask 0022
 
+VERSION="1.7.6"
+
 if [ -r "update/vmlinuz.bin" ]; then
 KERNEL="update/vmlinuz.bin"
 else
@@ -101,6 +103,8 @@ fi
 
 echo "$DATE" > update/date.txt
 
+echo "$VERSION" > update/version.txt
+
 # Report metadata.
 echo
 echo "=========================="
@@ -110,13 +114,14 @@ echo "Kernel:               $KERNEL"
 echo "Modules file system:  $MODULES_FS"
 echo "Root file system:     $ROOTFS"
 echo "build date:           $DATE"
+echo "build version:        $VERSION"
 echo "=========================="
 echo
 
 # Write metadata.
 cat > update/default.gcw0.desktop <<EOF
 [Desktop Entry]
-Name=OS Update
+Name=OS Update $VERSION
 Comment=OpenDingux Update $DATE
 Exec=update.sh
 Icon=opendingux
@@ -127,7 +132,7 @@ Categories=applications;
 EOF
 
 # Create OPK.
-OPK_FILE=update/rg350-update-$DATE.opk
+OPK_FILE=update/rg350-update-$VERSION-$DATE.opk
 mksquashfs \
 	update/default.gcw0.desktop \
 	update/opendingux.png \
@@ -135,6 +140,7 @@ mksquashfs \
 	update/trimfat.py \
 	update/flash_partition.sh \
 	update/date.txt \
+        update/version.txt \
 	$BOOTLOADERS \
 	$MININIT \
 	$KERNEL \
