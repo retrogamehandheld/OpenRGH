@@ -9,7 +9,11 @@
 * HDMI support - 2.2.x
 * Vulkan?? - Future
 
-# Updated firmware 1.7.5 beta 5:<br>
+# update firmware 1.7.5beta5: <br>
+https://drive.google.com/file/d/13iNEBQlbFkueCSAsnWpv8cVGKJv8ihpX/view
+
+# update firmware 1.7.5beta4: <br>
+https://drive.google.com/file/d/1kMVWTWTym6TfN3_nrM9N2QSFf2dUxxjp/view
 
 ## Changelog:<br>
 ### Beta5:<br>
@@ -20,6 +24,11 @@
 5. Fix the resize in old stock firmwares (bad ext4 partition)
 6. Fixed power off and reboot error messages
 7. Fixed slowdowns and stuttering during first 15 minutes after first boot
+8. Rebuild mininit-syspart from original opendingux code.
+9. Autoremove old configs of the system in the first boot.
+10. Change file system table.
+11. Restore USB-HID suport.
+12. update libshake from original code: https://github.com/zear/libShake
 
 ## Instructions:<br>
 1. Place in /media/data/apps or /media/<your SD card>/apps
