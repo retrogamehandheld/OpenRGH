@@ -9,6 +9,16 @@
 * HDMI support - 2.2.x
 * Vulkan?? - Future
 
+# update firmware 1.7.6: <br>
+https://drive.google.com/file/d/1kMVWTWTym6TfN3_nrM9N2QSFf2dUxxjp/view
+
+## Changelog:<br>
+### 1.7.6:<br>
+1. Rebuild mininit-syspart from original opendingux code.
+2. Autoremove old configs of the system in the first boot.
+3. Change file system table.
+4. Restore USB-HID suport.
+
 # Updated firmware 1.7.5 beta 2:<br>
 https://drive.google.com/file/d/1brhBrdfTbwJAbGnNt5gLairofZK-gdEz/view
 
