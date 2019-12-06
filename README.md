@@ -9,6 +9,13 @@
 * HDMI support - 2.2.x
 * Vulkan?? - Future
 
+# update firmware 1.7.7: <br>
+https://drive.google.com/file/d/13iNEBQlbFkueCSAsnWpv8cVGKJv8ihpX/view
+
+## Changelog:<br>
+### 1.7.7:<br>
+1. update libshake from original code: https://github.com/zear/libShake
+
 # update firmware 1.7.6: <br>
 https://drive.google.com/file/d/1kMVWTWTym6TfN3_nrM9N2QSFf2dUxxjp/view
 
